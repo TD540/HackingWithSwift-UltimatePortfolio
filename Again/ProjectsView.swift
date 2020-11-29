@@ -7,10 +7,11 @@
 
 import SwiftUI
 
-
 struct ProjectsView: View {
-    let showClosedProjects: Bool
+    static let openTag:String? = "Open"
+    static let closedTag:String? = "Closed"
     
+    let showClosedProjects: Bool
     let projects: FetchRequest<Project>
     
     init(showClosedProjects: Bool) {
@@ -24,10 +25,11 @@ struct ProjectsView: View {
     var body: some View {
         NavigationView {
             List {
+                
                 ForEach(projects.wrappedValue) { project in
-                    Section(header: Text(project.title ?? "")) {
-                        ForEach(project.items?.allObjects as? [Item] ?? []) { item in
-                            Text(item.title ?? "")
+                    Section(header: Text(project.projectTitle)) {
+                        ForEach(project.projectItems) { item in
+                            Text(item.itemTitle)
                         }
                     }
                 }
