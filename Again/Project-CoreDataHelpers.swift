@@ -41,8 +41,9 @@ extension Project {
         let originalItems = items?.allObjects as? [Item] ?? []
         guard originalItems.isEmpty == false else { return 0 }
         let completedItems = originalItems.filter { $0.completed == true }
-//        let completedItems = originalItems.filter(\.completed)
+//        let completedItems = originalItems.filter(\.completed) // i i i don't like shorthands
         return Double(completedItems.count) / Double(originalItems.count)
+//        return Double(completedItems.count / originalItems.count) // does this work or not ??
     }
     static var example: Project {
         let controller = DataController(inMemory: true)
