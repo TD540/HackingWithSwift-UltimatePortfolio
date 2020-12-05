@@ -31,8 +31,7 @@ struct ProjectsView: View {
                         ForEach(project.projectItems) { item in
                             ItemRowView(item: item)
                         }
-//                        shorthand foreach:
-//                        ForEach(project.projectItems, content: ItemRowView.init)
+//                        ForEach(project.projectItems, content: ItemRowView.init) // this is a shorthand foreach
                     }
                 }
             }

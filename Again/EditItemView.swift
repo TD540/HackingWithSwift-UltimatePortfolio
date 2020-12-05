@@ -28,11 +28,11 @@ struct EditItemView: View {
     var body: some View {
         Form {
             Section(header: Text("Basic settings")) {
-                TextField("Item name", text: $title)
-                TextField("Description", text: $detail)
+                TextField("Item name", text: $title.onChange(update))
+                TextField("Description", text: $detail.onChange(update))
             }
             Section(header: Text("Priority")) {
-                Picker("Priority", selection: $priority) {
+                Picker("Priority", selection: $priority.onChange(update)) {
                     Text("Low").tag(1)
                     Text("Medium").tag(2)
                     Text("High").tag(3)
@@ -40,11 +40,16 @@ struct EditItemView: View {
                 .pickerStyle(SegmentedPickerStyle())
             }
             Section {
-                Toggle("Mark Completed", isOn: $completed)
+                Toggle("Mark Completed", isOn: $completed.onChange(update))
             }
         }
         .navigationTitle("Edit Item")
-        .onDisappear(perform: update)
+//        .onDisappear(perform: update) // causes the view to update, but the user can see the change happening when goinng to previous view
+//        .onChange(of: title) { _ in update() }
+//        .onChange(of: detail) { _ in update() }
+//        .onChange(of: priority) { _ in update() }
+//        .onChange(of: completed) { _ in update() } // this the "SwiftUI way but is too tedious according to Paul. it's better to use extend Binding with onChange method
+        .onDisappear(perform: dataController.save)
     }
     
     func update() {

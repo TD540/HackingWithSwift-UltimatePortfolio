@@ -20,6 +20,7 @@
 		E98A531B25644FEB00B93A97 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98A531A25644FEB00B93A97 /* HomeView.swift */; };
 		E98A531E256450F900B93A97 /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98A531D256450F900B93A97 /* ProjectsView.swift */; };
 		E9D0DEFF257A99C500B6C855 /* ItemRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D0DEFE257A99C500B6C855 /* ItemRowView.swift */; };
+		E9D0DF02257AA0FE00B6C855 /* Binding-OnChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D0DF01257AA0FE00B6C855 /* Binding-OnChange.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		E98A531A25644FEB00B93A97 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		E98A531D256450F900B93A97 /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
 		E9D0DEFE257A99C500B6C855 /* ItemRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRowView.swift; sourceTree = "<group>"; };
+		E9D0DF01257AA0FE00B6C855 /* Binding-OnChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding-OnChange.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				E98A531D256450F900B93A97 /* ProjectsView.swift */,
 				E9D0DEFE257A99C500B6C855 /* ItemRowView.swift */,
 				E91C6FBA257434FF000F1E41 /* EditItemView.swift */,
+				E9D0DF01257AA0FE00B6C855 /* Binding-OnChange.swift */,
 				E92E40CE255EE7E3002F0ABF /* Assets.xcassets */,
 				E92E40D3255EE7E3002F0ABF /* Info.plist */,
 				E92E40D0255EE7E3002F0ABF /* Preview Content */,
@@ -182,6 +185,7 @@
 				E91E217025619F4100A0CC0B /* DataController.swift in Sources */,
 				E9D0DEFF257A99C500B6C855 /* ItemRowView.swift in Sources */,
 				E92E40CD255EE7E3002F0ABF /* ContentView.swift in Sources */,
+				E9D0DF02257AA0FE00B6C855 /* Binding-OnChange.swift in Sources */,
 				E98A531B25644FEB00B93A97 /* HomeView.swift in Sources */,
 				E92E40CB255EE7E3002F0ABF /* AgainApp.swift in Sources */,
 				E9549EC2257141C9000E9FCE /* Item-CoreDataHelpers.swift in Sources */,
