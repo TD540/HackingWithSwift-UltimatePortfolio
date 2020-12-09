@@ -26,9 +26,9 @@ struct EditProjectView: View {
     
     init(project: Project) {
         self.project = project
-        _title = State(wrappedValue: project.projectTitle)
-        _detail = State(wrappedValue: project.projectDetail)
-        _color = State(wrappedValue: project.projectColor)
+        _title = State(initialValue: project.projectTitle)
+        _detail = State(initialValue: project.projectDetail)
+        _color = State(initialValue: project.projectColor)
     }
     
     var body: some View {

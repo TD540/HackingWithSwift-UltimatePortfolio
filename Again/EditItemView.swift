@@ -19,10 +19,10 @@ struct EditItemView: View {
     
     init(item: Item) {
         self.item = item
-        _title = State(wrappedValue: item.itemTitle)
-        _detail = State(wrappedValue: item.itemDetail)
-        _priority = State(wrappedValue: Int(item.priority))
-        _completed = State(wrappedValue: item.completed)
+        _title = State(initialValue: item.itemTitle)
+        _detail = State(initialValue: item.itemDetail)
+        _priority = State(initialValue: Int(item.priority))
+        _completed = State(initialValue: item.completed)
     }
     
     var body: some View {
