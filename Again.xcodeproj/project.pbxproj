@@ -25,6 +25,7 @@
 		E9D0DEFF257A99C500B6C855 /* ItemRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D0DEFE257A99C500B6C855 /* ItemRowView.swift */; };
 		E9D0DF02257AA0FE00B6C855 /* Binding-OnChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D0DF01257AA0FE00B6C855 /* Binding-OnChange.swift */; };
 		E9D8BAAE2585295A001FC8BB /* Sequence-Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D8BAAD2585295A001FC8BB /* Sequence-Sorting.swift */; };
+		E9FE855D25855E3E00834D10 /* SelectSomethingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FE855C25855E3E00834D10 /* SelectSomethingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		E9D0DEFE257A99C500B6C855 /* ItemRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRowView.swift; sourceTree = "<group>"; };
 		E9D0DF01257AA0FE00B6C855 /* Binding-OnChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding-OnChange.swift"; sourceTree = "<group>"; };
 		E9D8BAAD2585295A001FC8BB /* Sequence-Sorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence-Sorting.swift"; sourceTree = "<group>"; };
+		E9FE855C25855E3E00834D10 /* SelectSomethingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSomethingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				E9549EC4257142FF000E9FCE /* Project-CoreDataHelpers.swift */,
 				E987565F257BB25E00B68652 /* ProjectHeaderView.swift */,
 				E98A531D256450F900B93A97 /* ProjectsView.swift */,
+				E9FE855C25855E3E00834D10 /* SelectSomethingView.swift */,
 				E9D8BAAD2585295A001FC8BB /* Sequence-Sorting.swift */,
 				E93A4793257BD30F005B37D4 /* EditProjectView.swift */,
 				E93A478F257BD090005B37D4 /* Colors.xcassets */,
@@ -198,6 +201,7 @@
 				E9549EC5257142FF000E9FCE /* Project-CoreDataHelpers.swift in Sources */,
 				E93A4794257BD30F005B37D4 /* EditProjectView.swift in Sources */,
 				E91E217025619F4100A0CC0B /* DataController.swift in Sources */,
+				E9FE855D25855E3E00834D10 /* SelectSomethingView.swift in Sources */,
 				E9D0DEFF257A99C500B6C855 /* ItemRowView.swift in Sources */,
 				E92E40CD255EE7E3002F0ABF /* ContentView.swift in Sources */,
 				E9D0DF02257AA0FE00B6C855 /* Binding-OnChange.swift in Sources */,
