@@ -16,12 +16,16 @@
 		E92E40D2255EE7E3002F0ABF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E92E40D1255EE7E3002F0ABF /* Preview Assets.xcassets */; };
 		E93A4790257BD090005B37D4 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E93A478F257BD090005B37D4 /* Colors.xcassets */; };
 		E93A4794257BD30F005B37D4 /* EditProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93A4793257BD30F005B37D4 /* EditProjectView.swift */; };
+		E941799F2586689A00AD0B0E /* Award.swift in Sources */ = {isa = PBXBuildFile; fileRef = E941799E2586689A00AD0B0E /* Award.swift */; };
+		E94179A22586698B00AD0B0E /* AwardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94179A12586698B00AD0B0E /* AwardsView.swift */; };
 		E9549EC2257141C9000E9FCE /* Item-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9549EC1257141C9000E9FCE /* Item-CoreDataHelpers.swift */; };
 		E9549EC5257142FF000E9FCE /* Project-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9549EC4257142FF000E9FCE /* Project-CoreDataHelpers.swift */; };
 		E9875660257BB25E00B68652 /* ProjectHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987565F257BB25E00B68652 /* ProjectHeaderView.swift */; };
 		E98A531925644E5D00B93A97 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E98A531825644E5D00B93A97 /* CloudKit.framework */; };
 		E98A531B25644FEB00B93A97 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98A531A25644FEB00B93A97 /* HomeView.swift */; };
 		E98A531E256450F900B93A97 /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98A531D256450F900B93A97 /* ProjectsView.swift */; };
+		E9BCEC2E25865A790046F9F8 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BCEC2D25865A790046F9F8 /* Bundle-Decodable.swift */; };
+		E9BCEC3125865C030046F9F8 /* Awards.json in Resources */ = {isa = PBXBuildFile; fileRef = E9BCEC3025865C030046F9F8 /* Awards.json */; };
 		E9D0DEFF257A99C500B6C855 /* ItemRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D0DEFE257A99C500B6C855 /* ItemRowView.swift */; };
 		E9D0DF02257AA0FE00B6C855 /* Binding-OnChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D0DF01257AA0FE00B6C855 /* Binding-OnChange.swift */; };
 		E9D8BAAE2585295A001FC8BB /* Sequence-Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D8BAAD2585295A001FC8BB /* Sequence-Sorting.swift */; };
@@ -40,6 +44,8 @@
 		E92E40D3255EE7E3002F0ABF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E93A478F257BD090005B37D4 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		E93A4793257BD30F005B37D4 /* EditProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProjectView.swift; sourceTree = "<group>"; };
+		E941799E2586689A00AD0B0E /* Award.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Award.swift; sourceTree = "<group>"; };
+		E94179A12586698B00AD0B0E /* AwardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardsView.swift; sourceTree = "<group>"; };
 		E9549EC1257141C9000E9FCE /* Item-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item-CoreDataHelpers.swift"; sourceTree = "<group>"; };
 		E9549EC4257142FF000E9FCE /* Project-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project-CoreDataHelpers.swift"; sourceTree = "<group>"; };
 		E987565F257BB25E00B68652 /* ProjectHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectHeaderView.swift; sourceTree = "<group>"; };
@@ -47,6 +53,8 @@
 		E98A531825644E5D00B93A97 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		E98A531A25644FEB00B93A97 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		E98A531D256450F900B93A97 /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
+		E9BCEC2D25865A790046F9F8 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
+		E9BCEC3025865C030046F9F8 /* Awards.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Awards.json; sourceTree = "<group>"; };
 		E9D0DEFE257A99C500B6C855 /* ItemRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRowView.swift; sourceTree = "<group>"; };
 		E9D0DF01257AA0FE00B6C855 /* Binding-OnChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding-OnChange.swift"; sourceTree = "<group>"; };
 		E9D8BAAD2585295A001FC8BB /* Sequence-Sorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence-Sorting.swift"; sourceTree = "<group>"; };
@@ -86,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				E98A531525644E3800B93A97 /* TD_Portfolio.entitlements */,
+				E9BCEC2D25865A790046F9F8 /* Bundle-Decodable.swift */,
 				E92E40CA255EE7E3002F0ABF /* TD_PortfolioApp.swift */,
 				E9D0DF01257AA0FE00B6C855 /* Binding-OnChange.swift */,
 				E92E40CC255EE7E3002F0ABF /* ContentView.swift */,
@@ -99,6 +108,9 @@
 				E9FE855C25855E3E00834D10 /* SelectSomethingView.swift */,
 				E9D8BAAD2585295A001FC8BB /* Sequence-Sorting.swift */,
 				E93A4793257BD30F005B37D4 /* EditProjectView.swift */,
+				E9BCEC3025865C030046F9F8 /* Awards.json */,
+				E941799E2586689A00AD0B0E /* Award.swift */,
+				E94179A12586698B00AD0B0E /* AwardsView.swift */,
 				E93A478F257BD090005B37D4 /* Colors.xcassets */,
 				E92E40CE255EE7E3002F0ABF /* Assets.xcassets */,
 				E92E40D3255EE7E3002F0ABF /* Info.plist */,
@@ -183,6 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E93A4790257BD090005B37D4 /* Colors.xcassets in Resources */,
+				E9BCEC3125865C030046F9F8 /* Awards.json in Resources */,
 				E92E40D2255EE7E3002F0ABF /* Preview Assets.xcassets in Resources */,
 				E92E40CF255EE7E3002F0ABF /* Assets.xcassets in Resources */,
 			);
@@ -197,15 +210,18 @@
 			files = (
 				E98A531E256450F900B93A97 /* ProjectsView.swift in Sources */,
 				E9875660257BB25E00B68652 /* ProjectHeaderView.swift in Sources */,
+				E94179A22586698B00AD0B0E /* AwardsView.swift in Sources */,
 				E91E216D25619DBB00A0CC0B /* Main.xcdatamodeld in Sources */,
 				E9549EC5257142FF000E9FCE /* Project-CoreDataHelpers.swift in Sources */,
 				E93A4794257BD30F005B37D4 /* EditProjectView.swift in Sources */,
 				E91E217025619F4100A0CC0B /* DataController.swift in Sources */,
 				E9FE855D25855E3E00834D10 /* SelectSomethingView.swift in Sources */,
+				E941799F2586689A00AD0B0E /* Award.swift in Sources */,
 				E9D0DEFF257A99C500B6C855 /* ItemRowView.swift in Sources */,
 				E92E40CD255EE7E3002F0ABF /* ContentView.swift in Sources */,
 				E9D0DF02257AA0FE00B6C855 /* Binding-OnChange.swift in Sources */,
 				E9D8BAAE2585295A001FC8BB /* Sequence-Sorting.swift in Sources */,
+				E9BCEC2E25865A790046F9F8 /* Bundle-Decodable.swift in Sources */,
 				E98A531B25644FEB00B93A97 /* HomeView.swift in Sources */,
 				E92E40CB255EE7E3002F0ABF /* TD_PortfolioApp.swift in Sources */,
 				E9549EC2257141C9000E9FCE /* Item-CoreDataHelpers.swift in Sources */,
