@@ -1,6 +1,6 @@
 //
-//  AgainApp.swift
-//  Again
+//  TD_PortfolioApp.swift
+//  TD Portfolio
 //
 //  Created by Thomas on 13/11/2020.
 //
@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct AgainApp: App {
+struct TD_PortfolioApp: App {
     @StateObject var dataController: DataController
     
     init() {
