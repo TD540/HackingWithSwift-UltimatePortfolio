@@ -32,7 +32,7 @@ struct ProjectsView: View {
         NavigationView {
             Group {
                 if projects.wrappedValue.isEmpty {
-                    Text("Nothing to see here!")
+                    Text("There's nothing here right now")
                 } else {
                     List {
                         ForEach(projects.wrappedValue) { project in
@@ -57,7 +57,7 @@ struct ProjectsView: View {
                                         dataController.save()
                                     }
                                 } label: {
-                                    Label("Create new item", systemImage: "plus")
+                                    Label("Add New Item", systemImage: "plus")
                                 }
                             }
                         }

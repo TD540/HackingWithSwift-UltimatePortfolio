@@ -60,12 +60,12 @@ struct EditProjectView: View {
                 }
                 .padding(.vertical)
             }
-            Section(footer: Text("Closing a project moves it from the Open to Closed tab; deleting it removes the project entirely")) {
-                Button(project.closed ? "Reopen this project" : "Close project") {
+            Section(footer: Text("Closing a project moves it from the Open to Closed tab; deleting it removes the project entirely.")) {
+                Button(project.closed ? "Reopen this project" : "Close this project") {
                     project.closed.toggle()
                     update()
                 }
-                Button("Delete project") {
+                Button("Delete this project") {
                     showingDeleteConfirm.toggle()
                 }
                 .accentColor(.red)
@@ -76,7 +76,7 @@ struct EditProjectView: View {
             dataController.save()
         })
         .alert(isPresented: $showingDeleteConfirm, content: {
-            Alert(title: Text("Delete project?"), message: Text("Are you sure you want to delete this project? You will also delete all the items it contains."), primaryButton: .default(Text("Yes"), action: delete), secondaryButton: .cancel())
+            Alert(title: Text("Delete project?"), message: Text("Are you sure you want to delete this project? You will also delete all the items it contains."), primaryButton: .default(Text("Delete"), action: delete), secondaryButton: .cancel())
         })
     }
     func update() {
