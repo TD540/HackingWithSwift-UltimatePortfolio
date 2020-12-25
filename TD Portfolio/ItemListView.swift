@@ -10,14 +10,14 @@ import SwiftUI
 struct ItemListView: View {
     let title: LocalizedStringKey
     let items: FetchedResults<Item>.SubSequence
-    
+
     func itemButton(for item: Item) -> some View {
         NavigationLink(destination: EditItemView(item: item)) {
             HStack(spacing: 20) {
                 Circle()
                     .stroke(Color(item.project?.projectColor ?? "Light Blue"), lineWidth: 3)
                     .frame(width: 44, height: 44)
-                
+
                 VStack(alignment: .leading) {
                     Text(item.itemTitle)
                         .font(.title2)
@@ -35,7 +35,7 @@ struct ItemListView: View {
             .shadow(color: Color.black.opacity(0.1), radius: 5)
         }
     }
-    
+
     var body: some View {
         if items.isEmpty {
             EmptyView()
@@ -44,14 +44,14 @@ struct ItemListView: View {
                 .font(.headline)
                 .foregroundColor(.secondary)
                 .padding(.top)
-            
+
             ForEach(items, content: itemButton)
         }
     }
 }
 
-//struct ItemListView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ItemListView()
-//    }
-//}
+// struct ItemListView_Previews: PreviewProvider {
+//     static var previews: some View {
+//         ItemListView()
+//     }
+// }

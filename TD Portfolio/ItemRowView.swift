@@ -10,7 +10,7 @@ import SwiftUI
 struct ItemRowView: View {
     @ObservedObject var project: Project
     @ObservedObject var item: Item
-    
+
     var icon: some View {
         if item.completed {
             return Image(systemName: "checkmark.circle")

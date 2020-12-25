@@ -16,7 +16,7 @@
 		E91C6FBB257434FF000F1E41 /* EditItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91C6FBA257434FF000F1E41 /* EditItemView.swift */; };
 		E91E216D25619DBB00A0CC0B /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E91E216B25619DBB00A0CC0B /* Main.xcdatamodeld */; };
 		E91E217025619F4100A0CC0B /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91E216F25619F4100A0CC0B /* DataController.swift */; };
-		E92E40CB255EE7E3002F0ABF /* TD_PortfolioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92E40CA255EE7E3002F0ABF /* TD_PortfolioApp.swift */; };
+		E92E40CB255EE7E3002F0ABF /* TDPortfolioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92E40CA255EE7E3002F0ABF /* TDPortfolioApp.swift */; };
 		E92E40CD255EE7E3002F0ABF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92E40CC255EE7E3002F0ABF /* ContentView.swift */; };
 		E92E40CF255EE7E3002F0ABF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E92E40CE255EE7E3002F0ABF /* Assets.xcassets */; };
 		E92E40D2255EE7E3002F0ABF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E92E40D1255EE7E3002F0ABF /* Preview Assets.xcassets */; };
@@ -54,7 +54,7 @@
 		E91E216C25619DBB00A0CC0B /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
 		E91E216F25619F4100A0CC0B /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		E92E40C7255EE7E3002F0ABF /* TD Portfolio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TD Portfolio.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E92E40CA255EE7E3002F0ABF /* TD_PortfolioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TD_PortfolioApp.swift; sourceTree = "<group>"; };
+		E92E40CA255EE7E3002F0ABF /* TDPortfolioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDPortfolioApp.swift; sourceTree = "<group>"; };
 		E92E40CC255EE7E3002F0ABF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E92E40CE255EE7E3002F0ABF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E92E40D1255EE7E3002F0ABF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -66,7 +66,7 @@
 		E9549EC1257141C9000E9FCE /* Item-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item-CoreDataHelpers.swift"; sourceTree = "<group>"; };
 		E9549EC4257142FF000E9FCE /* Project-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project-CoreDataHelpers.swift"; sourceTree = "<group>"; };
 		E987565F257BB25E00B68652 /* ProjectHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectHeaderView.swift; sourceTree = "<group>"; };
-		E98A531525644E3800B93A97 /* TD_Portfolio.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TD_Portfolio.entitlements; sourceTree = "<group>"; };
+		E98A531525644E3800B93A97 /* TDPortfolio.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TDPortfolio.entitlements; sourceTree = "<group>"; };
 		E98A531825644E5D00B93A97 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		E98A531A25644FEB00B93A97 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		E98A531D256450F900B93A97 /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
@@ -109,9 +109,9 @@
 		E92E40C9255EE7E3002F0ABF /* TD Portfolio */ = {
 			isa = PBXGroup;
 			children = (
-				E98A531525644E3800B93A97 /* TD_Portfolio.entitlements */,
+				E98A531525644E3800B93A97 /* TDPortfolio.entitlements */,
+				E92E40CA255EE7E3002F0ABF /* TDPortfolioApp.swift */,
 				E9BCEC2D25865A790046F9F8 /* Bundle-Decodable.swift */,
-				E92E40CA255EE7E3002F0ABF /* TD_PortfolioApp.swift */,
 				E9D0DF01257AA0FE00B6C855 /* Binding-OnChange.swift */,
 				E92E40CC255EE7E3002F0ABF /* ContentView.swift */,
 				E98A531A25644FEB00B93A97 /* HomeView.swift */,
@@ -165,6 +165,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E92E40D6255EE7E3002F0ABF /* Build configuration list for PBXNativeTarget "TD Portfolio" */;
 			buildPhases = (
+				DC8E18A22596820C00383D65 /* SwiftLint */,
 				E92E40C3255EE7E3002F0ABF /* Sources */,
 				E92E40C4255EE7E3002F0ABF /* Frameworks */,
 				E92E40C5255EE7E3002F0ABF /* Resources */,
@@ -228,6 +229,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		DC8E18A22596820C00383D65 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E92E40C3255EE7E3002F0ABF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -251,7 +273,7 @@
 				E9BCEC2E25865A790046F9F8 /* Bundle-Decodable.swift in Sources */,
 				DC4B55F92593D5AC007F6E9D /* ItemListView.swift in Sources */,
 				E98A531B25644FEB00B93A97 /* HomeView.swift in Sources */,
-				E92E40CB255EE7E3002F0ABF /* TD_PortfolioApp.swift in Sources */,
+				E92E40CB255EE7E3002F0ABF /* TDPortfolioApp.swift in Sources */,
 				E9549EC2257141C9000E9FCE /* Item-CoreDataHelpers.swift in Sources */,
 				E91C6FBB257434FF000F1E41 /* EditItemView.swift in Sources */,
 			);
@@ -414,7 +436,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "TD Portfolio/TD_Portfolio.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "TD Portfolio/TDPortfolio.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"TD Portfolio/Preview Content\"";
 				DEVELOPMENT_TEAM = ZK76SGK8FA;
@@ -437,7 +459,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "TD Portfolio/TD_Portfolio.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "TD Portfolio/TDPortfolio.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"TD Portfolio/Preview Content\"";
 				DEVELOPMENT_TEAM = ZK76SGK8FA;

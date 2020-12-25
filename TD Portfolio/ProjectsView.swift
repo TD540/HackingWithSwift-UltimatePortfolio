@@ -8,18 +8,18 @@
 import SwiftUI
 
 struct ProjectsView: View {
-    static let openTag:String? = "Open"
-    static let closedTag:String? = "Closed"
-    
+    static let openTag: String? = "Open"
+    static let closedTag: String? = "Closed"
+
     @EnvironmentObject var dataController: DataController
     @Environment(\.managedObjectContext) var managedObjectContext
-    
+
     @State private var showingSortOrder = false
     @State private var sortOrder = Item.SortOrder.optimized
-    
+
     let showClosedProjects: Bool
     let projects: FetchRequest<Project>
-    
+
     init(showClosedProjects: Bool) {
         self.showClosedProjects = showClosedProjects
 
@@ -27,7 +27,7 @@ struct ProjectsView: View {
             NSSortDescriptor(keyPath: \Project.creationDate, ascending: false)
         ], predicate: NSPredicate(format: "closed = %d", showClosedProjects))
     }
-    
+
     var addProjectToolbarItem: some ToolbarContent {
         ToolbarItem(placement: .navigationBarTrailing) {
             if showClosedProjects == false {
@@ -91,11 +91,11 @@ struct ProjectsView: View {
                     .default(Text("Title")) { sortOrder = .title }
                 ])
             }
-            
+
             SelectSomethingView()
         }
     }
-    
+
     func addProject() {
         withAnimation {
             let project = Project(context: managedObjectContext)
@@ -122,12 +122,12 @@ struct ProjectsView: View {
     }
 }
 
-//struct ProjectsView_Previews: PreviewProvider {
-//    static var dataController = DataController.preview
-//
-//    static var previews: some View {
-//        ProjectsView(showClosedProjects: false)
-//            .environment(\.managedObjectContext, dataController.container.viewContext)
-//            .environmentObject(dataController)
-//    }
-//}
+// struct ProjectsView_Previews: PreviewProvider {
+//     static var dataController = DataController.preview
+// 
+//     static var previews: some View {
+//         ProjectsView(showClosedProjects: false)
+//             .environment(\.managedObjectContext, dataController.container.viewContext)
+//             .environmentObject(dataController)
+//     }
+// }

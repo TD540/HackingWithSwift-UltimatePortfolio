@@ -9,14 +9,14 @@ import SwiftUI
 
 struct EditItemView: View {
     let item: Item
-    
+
     @EnvironmentObject var dataController: DataController
-    
+
     @State private var title: String
     @State private var detail: String
     @State private var priority: Int
     @State private var completed: Bool
-    
+
     init(item: Item) {
         self.item = item
         _title = State(initialValue: item.itemTitle)
@@ -24,7 +24,7 @@ struct EditItemView: View {
         _priority = State(initialValue: Int(item.priority))
         _completed = State(initialValue: item.completed)
     }
-    
+
     var body: some View {
         Form {
             Section(header: Text("Basic settings")) {
@@ -44,17 +44,19 @@ struct EditItemView: View {
             }
         }
         .navigationTitle("Edit Item")
-//        .onDisappear(perform: update) // causes the view to update, but the user can see the change happening when goinng to previous view
+//        .onDisappear(perform: update)
+// causes the view to update, but the user can see the change happening when goinng to previous view
 //        .onChange(of: title) { _ in update() }
 //        .onChange(of: detail) { _ in update() }
 //        .onChange(of: priority) { _ in update() }
-//        .onChange(of: completed) { _ in update() } // this the "SwiftUI way but is too tedious according to Paul. it's better to use extend Binding with onChange method
+//        .onChange(of: completed) { _ in update() }
+// this the "SwiftUI way but is too tedious according to Paul. it's better to use extend Binding with onChange method
         .onDisappear(perform: dataController.save)
     }
-    
+
     func update() {
         item.project?.objectWillChange.send()
-        
+
         item.title = title
         item.detail = detail
         item.priority = Int16(priority)

@@ -9,28 +9,28 @@ import SwiftUI
 
 struct EditProjectView: View {
     let project: Project
-    
+
     @EnvironmentObject var dataController: DataController
     @Environment(\.presentationMode) var presentationMode
-    
+
     @State private var title: String
     @State private var detail: String
     @State private var color: String
 //    @State private var creationDate: Date // ?
 //    @State private var closed: Bool // ?
     @State private var showingDeleteConfirm = false
-    
+
     let colorColumns = [
         GridItem(.adaptive(minimum: 44))
     ]
-    
+
     init(project: Project) {
         self.project = project
         _title = State(initialValue: project.projectTitle)
         _detail = State(initialValue: project.projectDetail)
         _color = State(initialValue: project.projectColor)
     }
-    
+
     var body: some View {
         Form {
             Section(header: Text("Basic settings")) {
@@ -43,6 +43,8 @@ struct EditProjectView: View {
                 }
                 .padding(.vertical)
             }
+
+            // swiftlint:disable:next line_length
             Section(footer: Text("Closing a project moves it from the Open to Closed tab; deleting it removes the project entirely.")) {
                 Button(project.closed ? "Reopen this project" : "Close this project") {
                     project.closed.toggle()
@@ -58,9 +60,15 @@ struct EditProjectView: View {
         .onDisappear(perform: {
             dataController.save()
         })
-        .alert(isPresented: $showingDeleteConfirm, content: {
-            Alert(title: Text("Delete project?"), message: Text("Are you sure you want to delete this project? You will also delete all the items it contains."), primaryButton: .default(Text("Delete"), action: delete), secondaryButton: .cancel())
-        })
+        .alert(isPresented: $showingDeleteConfirm) {
+            Alert(
+                title: Text("Delete project?"),
+                message: Text("Are you sure you want to delete this project? You will also delete all the items it contains."), // swiftlint:disable:this line_length
+                primaryButton: .default(Text("Delete"),
+                action: delete),
+                secondaryButton: .cancel()
+            )
+        }
     }
     func update() {
         project.title = title

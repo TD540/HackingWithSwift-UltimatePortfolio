@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ProjectHeaderView: View {
     @ObservedObject var project: Project
-    
+
     var body: some View {
         HStack {
             VStack(alignment: .leading, content: {
