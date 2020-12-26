@@ -32,7 +32,7 @@ class DataController: ObservableObject {
 
         container.loadPersistentStores { _, error in
             if let error = error {
-                fatalError("Fatal error loadinng store: \(error.localizedDescription)")
+                fatalError("Fatal error loading store: \(error.localizedDescription)")
             }
         }
     }
