@@ -89,6 +89,81 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DCB3489825A794CC002D21C0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E9549EC4257142FF000E9FCE /* Project-CoreDataHelpers.swift */,
+				E9549EC1257141C9000E9FCE /* Item-CoreDataHelpers.swift */,
+				E9D0DF01257AA0FE00B6C855 /* Binding-OnChange.swift */,
+				E9BCEC2D25865A790046F9F8 /* Bundle-Decodable.swift */,
+				DC517A57258E6B4B00F070D8 /* Color-Additions.swift */,
+				E9D8BAAD2585295A001FC8BB /* Sequence-Sorting.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DCB3489925A794D5002D21C0 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				DC5E6B67259293B500E54BFD /* Localizable.strings */,
+				DC5E6B6E25929B9800E54BFD /* Localizable.stringsdict */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		DCB3489A25A794E0002D21C0 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				E92E40D3255EE7E3002F0ABF /* Info.plist */,
+				E98A531525644E3800B93A97 /* TDPortfolio.entitlements */,
+				E91E216B25619DBB00A0CC0B /* Main.xcdatamodeld */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		DCB3489F25A7BAA5002D21C0 /* Activities */ = {
+			isa = PBXGroup;
+			children = (
+				DCB348A025A7BABC002D21C0 /* Home */,
+				DCB348A125A7BAC3002D21C0 /* Projects */,
+				DCB348A225A7BACB002D21C0 /* Awards */,
+			);
+			path = Activities;
+			sourceTree = "<group>";
+		};
+		DCB348A025A7BABC002D21C0 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E98A531A25644FEB00B93A97 /* HomeView.swift */,
+				DC4B55F82593D5AC007F6E9D /* ItemListView.swift */,
+				DC4B55FB2593D6FA007F6E9D /* ProjectSummaryView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		DCB348A125A7BAC3002D21C0 /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				E98A531D256450F900B93A97 /* ProjectsView.swift */,
+				E9FE855C25855E3E00834D10 /* SelectSomethingView.swift */,
+				E987565F257BB25E00B68652 /* ProjectHeaderView.swift */,
+				E9D0DEFE257A99C500B6C855 /* ItemRowView.swift */,
+				E93A4793257BD30F005B37D4 /* EditProjectView.swift */,
+				E91C6FBA257434FF000F1E41 /* EditItemView.swift */,
+			);
+			path = Projects;
+			sourceTree = "<group>";
+		};
+		DCB348A225A7BACB002D21C0 /* Awards */ = {
+			isa = PBXGroup;
+			children = (
+				E94179A12586698B00AD0B0E /* AwardsView.swift */,
+				E941799E2586689A00AD0B0E /* Award.swift */,
+				DC5E6B7625929D0400E54BFD /* Awards.json */,
+			);
+			path = Awards;
+			sourceTree = "<group>";
+		};
 		E92E40BE255EE7E3002F0ABF = {
 			isa = PBXGroup;
 			children = (
@@ -109,35 +184,16 @@
 		E92E40C9255EE7E3002F0ABF /* TD Portfolio */ = {
 			isa = PBXGroup;
 			children = (
-				E92E40CE255EE7E3002F0ABF /* Assets.xcassets */,
-				E941799E2586689A00AD0B0E /* Award.swift */,
-				DC5E6B7625929D0400E54BFD /* Awards.json */,
-				E94179A12586698B00AD0B0E /* AwardsView.swift */,
-				E9D0DF01257AA0FE00B6C855 /* Binding-OnChange.swift */,
-				E9BCEC2D25865A790046F9F8 /* Bundle-Decodable.swift */,
-				DC517A57258E6B4B00F070D8 /* Color-Additions.swift */,
-				E93A478F257BD090005B37D4 /* Colors.xcassets */,
-				E92E40CC255EE7E3002F0ABF /* ContentView.swift */,
-				E91E216F25619F4100A0CC0B /* DataController.swift */,
-				E91C6FBA257434FF000F1E41 /* EditItemView.swift */,
-				E93A4793257BD30F005B37D4 /* EditProjectView.swift */,
-				E98A531A25644FEB00B93A97 /* HomeView.swift */,
-				E92E40D3255EE7E3002F0ABF /* Info.plist */,
-				E9549EC1257141C9000E9FCE /* Item-CoreDataHelpers.swift */,
-				DC4B55F82593D5AC007F6E9D /* ItemListView.swift */,
-				E9D0DEFE257A99C500B6C855 /* ItemRowView.swift */,
-				DC5E6B67259293B500E54BFD /* Localizable.strings */,
-				DC5E6B6E25929B9800E54BFD /* Localizable.stringsdict */,
-				E91E216B25619DBB00A0CC0B /* Main.xcdatamodeld */,
-				E92E40D0255EE7E3002F0ABF /* Preview Content */,
-				E9549EC4257142FF000E9FCE /* Project-CoreDataHelpers.swift */,
-				E987565F257BB25E00B68652 /* ProjectHeaderView.swift */,
-				DC4B55FB2593D6FA007F6E9D /* ProjectSummaryView.swift */,
-				E98A531D256450F900B93A97 /* ProjectsView.swift */,
-				E9FE855C25855E3E00834D10 /* SelectSomethingView.swift */,
-				E9D8BAAD2585295A001FC8BB /* Sequence-Sorting.swift */,
-				E98A531525644E3800B93A97 /* TDPortfolio.entitlements */,
 				E92E40CA255EE7E3002F0ABF /* TDPortfolioApp.swift */,
+				E91E216F25619F4100A0CC0B /* DataController.swift */,
+				E92E40CC255EE7E3002F0ABF /* ContentView.swift */,
+				DCB3489F25A7BAA5002D21C0 /* Activities */,
+				DCB3489825A794CC002D21C0 /* Extensions */,
+				DCB3489925A794D5002D21C0 /* Localization */,
+				DCB3489A25A794E0002D21C0 /* Configuration */,
+				E92E40CE255EE7E3002F0ABF /* Assets.xcassets */,
+				E93A478F257BD090005B37D4 /* Colors.xcassets */,
+				E92E40D0255EE7E3002F0ABF /* Preview Content */,
 			);
 			path = "TD Portfolio";
 			sourceTree = "<group>";
@@ -186,7 +242,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1220;
-				LastUpgradeCheck = 1220;
+				LastUpgradeCheck = 1230;
 				TargetAttributes = {
 					E92E40C6255EE7E3002F0ABF = {
 						CreatedOnToolsVersion = 12.2;
@@ -319,6 +375,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -380,6 +437,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -436,12 +494,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "TD Portfolio/TDPortfolio.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "TD Portfolio/Configuration/TDPortfolio.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"TD Portfolio/Preview Content\"";
 				DEVELOPMENT_TEAM = ZK76SGK8FA;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "TD Portfolio/Info.plist";
+				INFOPLIST_FILE = "TD Portfolio/Configuration/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -459,12 +517,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "TD Portfolio/TDPortfolio.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "TD Portfolio/Configuration/TDPortfolio.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"TD Portfolio/Preview Content\"";
 				DEVELOPMENT_TEAM = ZK76SGK8FA;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "TD Portfolio/Info.plist";
+				INFOPLIST_FILE = "TD Portfolio/Configuration/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
