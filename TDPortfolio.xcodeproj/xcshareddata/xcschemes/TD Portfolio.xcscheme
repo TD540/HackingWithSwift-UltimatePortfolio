@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E92E40C6255EE7E3002F0ABF"
-               BuildableName = "TD Portfolio.app"
-               BlueprintName = "TD Portfolio"
-               ReferencedContainer = "container:TD Portfolio.xcodeproj">
+               BuildableName = "TDPortfolio.app"
+               BlueprintName = "TDPortfolio"
+               ReferencedContainer = "container:TDPortfolio.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,12 +33,22 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E92E40C6255EE7E3002F0ABF"
-            BuildableName = "TD Portfolio.app"
-            BlueprintName = "TD Portfolio"
-            ReferencedContainer = "container:TD Portfolio.xcodeproj">
+            BuildableName = "TDPortfolio.app"
+            BlueprintName = "TDPortfolio"
+            ReferencedContainer = "container:TDPortfolio.xcodeproj">
          </BuildableReference>
       </CodeCoverageTargets>
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "DCB2A9BE25AEE7F400A12C0C"
+               BuildableName = "TDPortfolioTests.xctest"
+               BlueprintName = "TDPortfolioTests"
+               ReferencedContainer = "container:TDPortfolio.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
@@ -57,9 +67,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E92E40C6255EE7E3002F0ABF"
-            BuildableName = "TD Portfolio.app"
-            BlueprintName = "TD Portfolio"
-            ReferencedContainer = "container:TD Portfolio.xcodeproj">
+            BuildableName = "TDPortfolio.app"
+            BlueprintName = "TDPortfolio"
+            ReferencedContainer = "container:TDPortfolio.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -74,9 +84,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E92E40C6255EE7E3002F0ABF"
-            BuildableName = "TD Portfolio.app"
-            BlueprintName = "TD Portfolio"
-            ReferencedContainer = "container:TD Portfolio.xcodeproj">
+            BuildableName = "TDPortfolio.app"
+            BlueprintName = "TDPortfolio"
+            ReferencedContainer = "container:TDPortfolio.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

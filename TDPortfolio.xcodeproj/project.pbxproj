@@ -13,6 +13,7 @@
 		DC5E6B65259293B500E54BFD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DC5E6B67259293B500E54BFD /* Localizable.strings */; };
 		DC5E6B6C25929B9800E54BFD /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = DC5E6B6E25929B9800E54BFD /* Localizable.stringsdict */; };
 		DC5E6B7425929D0400E54BFD /* Awards.json in Resources */ = {isa = PBXBuildFile; fileRef = DC5E6B7625929D0400E54BFD /* Awards.json */; };
+		DCB2A9C225AEE7F400A12C0C /* TDPortfolioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB2A9C125AEE7F400A12C0C /* TDPortfolioTests.swift */; };
 		E91C6FBB257434FF000F1E41 /* EditItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91C6FBA257434FF000F1E41 /* EditItemView.swift */; };
 		E91E216D25619DBB00A0CC0B /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E91E216B25619DBB00A0CC0B /* Main.xcdatamodeld */; };
 		E91E217025619F4100A0CC0B /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91E216F25619F4100A0CC0B /* DataController.swift */; };
@@ -37,6 +38,16 @@
 		E9FE855D25855E3E00834D10 /* SelectSomethingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FE855C25855E3E00834D10 /* SelectSomethingView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		DCB2A9C425AEE7F400A12C0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E92E40BF255EE7E3002F0ABF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E92E40C6255EE7E3002F0ABF;
+			remoteInfo = "TD Portfolio";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		DC4B55F82593D5AC007F6E9D /* ItemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListView.swift; sourceTree = "<group>"; };
 		DC4B55FB2593D6FA007F6E9D /* ProjectSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectSummaryView.swift; sourceTree = "<group>"; };
@@ -50,10 +61,13 @@
 		DC5E6B7525929D0400E54BFD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = en; path = en.lproj/Awards.json; sourceTree = "<group>"; };
 		DC5E6B7825929D1700E54BFD /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = nl; path = nl.lproj/Awards.json; sourceTree = "<group>"; };
 		DC5E6B7925929D1800E54BFD /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = hu; path = hu.lproj/Awards.json; sourceTree = "<group>"; };
+		DCB2A9BF25AEE7F400A12C0C /* TDPortfolioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDPortfolioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCB2A9C125AEE7F400A12C0C /* TDPortfolioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDPortfolioTests.swift; sourceTree = "<group>"; };
+		DCB2A9C325AEE7F400A12C0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E91C6FBA257434FF000F1E41 /* EditItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemView.swift; sourceTree = "<group>"; };
 		E91E216C25619DBB00A0CC0B /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
 		E91E216F25619F4100A0CC0B /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
-		E92E40C7255EE7E3002F0ABF /* TD Portfolio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TD Portfolio.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E92E40C7255EE7E3002F0ABF /* TDPortfolio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TDPortfolio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E92E40CA255EE7E3002F0ABF /* TDPortfolioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDPortfolioApp.swift; sourceTree = "<group>"; };
 		E92E40CC255EE7E3002F0ABF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E92E40CE255EE7E3002F0ABF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -78,6 +92,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		DCB2A9BC25AEE7F400A12C0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E92E40C4255EE7E3002F0ABF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -89,6 +110,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DCB2A9C025AEE7F400A12C0C /* TDPortfolioTests */ = {
+			isa = PBXGroup;
+			children = (
+				DCB2A9C125AEE7F400A12C0C /* TDPortfolioTests.swift */,
+				DCB2A9C325AEE7F400A12C0C /* Info.plist */,
+			);
+			path = TDPortfolioTests;
+			sourceTree = "<group>";
+		};
 		DCB3489825A794CC002D21C0 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -167,7 +197,8 @@
 		E92E40BE255EE7E3002F0ABF = {
 			isa = PBXGroup;
 			children = (
-				E92E40C9255EE7E3002F0ABF /* TD Portfolio */,
+				E92E40C9255EE7E3002F0ABF /* TDPortfolio */,
+				DCB2A9C025AEE7F400A12C0C /* TDPortfolioTests */,
 				E92E40C8255EE7E3002F0ABF /* Products */,
 				E98A531725644E5D00B93A97 /* Frameworks */,
 			);
@@ -176,12 +207,13 @@
 		E92E40C8255EE7E3002F0ABF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E92E40C7255EE7E3002F0ABF /* TD Portfolio.app */,
+				E92E40C7255EE7E3002F0ABF /* TDPortfolio.app */,
+				DCB2A9BF25AEE7F400A12C0C /* TDPortfolioTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E92E40C9255EE7E3002F0ABF /* TD Portfolio */ = {
+		E92E40C9255EE7E3002F0ABF /* TDPortfolio */ = {
 			isa = PBXGroup;
 			children = (
 				E92E40CA255EE7E3002F0ABF /* TDPortfolioApp.swift */,
@@ -195,7 +227,7 @@
 				E93A478F257BD090005B37D4 /* Colors.xcassets */,
 				E92E40D0255EE7E3002F0ABF /* Preview Content */,
 			);
-			path = "TD Portfolio";
+			path = TDPortfolio;
 			sourceTree = "<group>";
 		};
 		E92E40D0255EE7E3002F0ABF /* Preview Content */ = {
@@ -217,9 +249,27 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E92E40C6255EE7E3002F0ABF /* TD Portfolio */ = {
+		DCB2A9BE25AEE7F400A12C0C /* TDPortfolioTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E92E40D6255EE7E3002F0ABF /* Build configuration list for PBXNativeTarget "TD Portfolio" */;
+			buildConfigurationList = DCB2A9C825AEE7F500A12C0C /* Build configuration list for PBXNativeTarget "TDPortfolioTests" */;
+			buildPhases = (
+				DCB2A9BB25AEE7F400A12C0C /* Sources */,
+				DCB2A9BC25AEE7F400A12C0C /* Frameworks */,
+				DCB2A9BD25AEE7F400A12C0C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCB2A9C525AEE7F400A12C0C /* PBXTargetDependency */,
+			);
+			name = TDPortfolioTests;
+			productName = "TD PortfolioTests";
+			productReference = DCB2A9BF25AEE7F400A12C0C /* TDPortfolioTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E92E40C6255EE7E3002F0ABF /* TDPortfolio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E92E40D6255EE7E3002F0ABF /* Build configuration list for PBXNativeTarget "TDPortfolio" */;
 			buildPhases = (
 				DC8E18A22596820C00383D65 /* SwiftLint */,
 				E92E40C3255EE7E3002F0ABF /* Sources */,
@@ -230,9 +280,9 @@
 			);
 			dependencies = (
 			);
-			name = "TD Portfolio";
+			name = TDPortfolio;
 			productName = Again;
-			productReference = E92E40C7255EE7E3002F0ABF /* TD Portfolio.app */;
+			productReference = E92E40C7255EE7E3002F0ABF /* TDPortfolio.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -241,15 +291,19 @@
 		E92E40BF255EE7E3002F0ABF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1220;
+				LastSwiftUpdateCheck = 1230;
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
+					DCB2A9BE25AEE7F400A12C0C = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = E92E40C6255EE7E3002F0ABF;
+					};
 					E92E40C6255EE7E3002F0ABF = {
 						CreatedOnToolsVersion = 12.2;
 					};
 				};
 			};
-			buildConfigurationList = E92E40C2255EE7E3002F0ABF /* Build configuration list for PBXProject "TD Portfolio" */;
+			buildConfigurationList = E92E40C2255EE7E3002F0ABF /* Build configuration list for PBXProject "TDPortfolio" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -264,12 +318,20 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E92E40C6255EE7E3002F0ABF /* TD Portfolio */,
+				E92E40C6255EE7E3002F0ABF /* TDPortfolio */,
+				DCB2A9BE25AEE7F400A12C0C /* TDPortfolioTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		DCB2A9BD25AEE7F400A12C0C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E92E40C5255EE7E3002F0ABF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -307,6 +369,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		DCB2A9BB25AEE7F400A12C0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCB2A9C225AEE7F400A12C0C /* TDPortfolioTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E92E40C3255EE7E3002F0ABF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -336,6 +406,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DCB2A9C525AEE7F400A12C0C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E92E40C6255EE7E3002F0ABF /* TDPortfolio */;
+			targetProxy = DCB2A9C425AEE7F400A12C0C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		DC5E6B67259293B500E54BFD /* Localizable.strings */ = {
@@ -371,6 +449,48 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		DCB2A9C625AEE7F500A12C0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZK76SGK8FA;
+				INFOPLIST_FILE = "TD PortfolioTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "design.td540.TD-PortfolioTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TDPortfolio.app/TDPortfolio";
+			};
+			name = Debug;
+		};
+		DCB2A9C725AEE7F500A12C0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZK76SGK8FA;
+				INFOPLIST_FILE = "TD PortfolioTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "design.td540.TD-PortfolioTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TDPortfolio.app/TDPortfolio";
+			};
+			name = Release;
+		};
 		E92E40D4255EE7E3002F0ABF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -494,12 +614,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "TD Portfolio/Configuration/TDPortfolio.entitlements";
+				CODE_SIGN_ENTITLEMENTS = TDPortfolio/Configuration/TDPortfolio.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"TD Portfolio/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"TDPortfolio/Preview Content\"";
 				DEVELOPMENT_TEAM = ZK76SGK8FA;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "TD Portfolio/Configuration/Info.plist";
+				INFOPLIST_FILE = TDPortfolio/Configuration/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -517,12 +637,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "TD Portfolio/Configuration/TDPortfolio.entitlements";
+				CODE_SIGN_ENTITLEMENTS = TDPortfolio/Configuration/TDPortfolio.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"TD Portfolio/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"TDPortfolio/Preview Content\"";
 				DEVELOPMENT_TEAM = ZK76SGK8FA;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "TD Portfolio/Configuration/Info.plist";
+				INFOPLIST_FILE = TDPortfolio/Configuration/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -538,7 +658,16 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E92E40C2255EE7E3002F0ABF /* Build configuration list for PBXProject "TD Portfolio" */ = {
+		DCB2A9C825AEE7F500A12C0C /* Build configuration list for PBXNativeTarget "TDPortfolioTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCB2A9C625AEE7F500A12C0C /* Debug */,
+				DCB2A9C725AEE7F500A12C0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E92E40C2255EE7E3002F0ABF /* Build configuration list for PBXProject "TDPortfolio" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E92E40D4255EE7E3002F0ABF /* Debug */,
@@ -547,7 +676,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E92E40D6255EE7E3002F0ABF /* Build configuration list for PBXNativeTarget "TD Portfolio" */ = {
+		E92E40D6255EE7E3002F0ABF /* Build configuration list for PBXNativeTarget "TDPortfolio" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E92E40D7255EE7E3002F0ABF /* Debug */,
