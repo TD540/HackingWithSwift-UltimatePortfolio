@@ -14,6 +14,7 @@
 		DC5E6B6C25929B9800E54BFD /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = DC5E6B6E25929B9800E54BFD /* Localizable.stringsdict */; };
 		DC5E6B7425929D0400E54BFD /* Awards.json in Resources */ = {isa = PBXBuildFile; fileRef = DC5E6B7625929D0400E54BFD /* Awards.json */; };
 		DCB2A9C225AEE7F400A12C0C /* TDPortfolioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB2A9C125AEE7F400A12C0C /* TDPortfolioTests.swift */; };
+		DCB2A9E025AF6A2400A12C0C /* AssetTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB2A9DF25AF6A2400A12C0C /* AssetTest.swift */; };
 		E91C6FBB257434FF000F1E41 /* EditItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91C6FBA257434FF000F1E41 /* EditItemView.swift */; };
 		E91E216D25619DBB00A0CC0B /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E91E216B25619DBB00A0CC0B /* Main.xcdatamodeld */; };
 		E91E217025619F4100A0CC0B /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91E216F25619F4100A0CC0B /* DataController.swift */; };
@@ -64,6 +65,7 @@
 		DCB2A9BF25AEE7F400A12C0C /* TDPortfolioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDPortfolioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCB2A9C125AEE7F400A12C0C /* TDPortfolioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDPortfolioTests.swift; sourceTree = "<group>"; };
 		DCB2A9C325AEE7F400A12C0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCB2A9DF25AF6A2400A12C0C /* AssetTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetTest.swift; sourceTree = "<group>"; };
 		E91C6FBA257434FF000F1E41 /* EditItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemView.swift; sourceTree = "<group>"; };
 		E91E216C25619DBB00A0CC0B /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
 		E91E216F25619F4100A0CC0B /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				DCB2A9C125AEE7F400A12C0C /* TDPortfolioTests.swift */,
+				DCB2A9DF25AF6A2400A12C0C /* AssetTest.swift */,
 				DCB2A9C325AEE7F400A12C0C /* Info.plist */,
 			);
 			path = TDPortfolioTests;
@@ -373,6 +376,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCB2A9E025AF6A2400A12C0C /* AssetTest.swift in Sources */,
 				DCB2A9C225AEE7F400A12C0C /* TDPortfolioTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -455,7 +459,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZK76SGK8FA;
-				INFOPLIST_FILE = "TD PortfolioTests/Info.plist";
+				INFOPLIST_FILE = TDPortfolioTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -476,7 +480,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZK76SGK8FA;
-				INFOPLIST_FILE = "TD PortfolioTests/Info.plist";
+				INFOPLIST_FILE = TDPortfolioTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
