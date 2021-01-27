@@ -34,6 +34,7 @@
 		E98A531B25644FEB00B93A97 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98A531A25644FEB00B93A97 /* HomeView.swift */; };
 		E98A531E256450F900B93A97 /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98A531D256450F900B93A97 /* ProjectsView.swift */; };
 		E9A41BF525C1599500BB733D /* AwardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A41BF425C1599500BB733D /* AwardTests.swift */; };
+		E9A41BFB25C1638600BB733D /* DevelopmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A41BFA25C1638600BB733D /* DevelopmentTests.swift */; };
 		E9BCEC2E25865A790046F9F8 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BCEC2D25865A790046F9F8 /* Bundle-Decodable.swift */; };
 		E9D0DEFF257A99C500B6C855 /* ItemRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D0DEFE257A99C500B6C855 /* ItemRowView.swift */; };
 		E9D0DF02257AA0FE00B6C855 /* Binding-OnChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D0DF01257AA0FE00B6C855 /* Binding-OnChange.swift */; };
@@ -90,6 +91,7 @@
 		E98A531A25644FEB00B93A97 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		E98A531D256450F900B93A97 /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
 		E9A41BF425C1599500BB733D /* AwardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardTests.swift; sourceTree = "<group>"; };
+		E9A41BFA25C1638600BB733D /* DevelopmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopmentTests.swift; sourceTree = "<group>"; };
 		E9BCEC2D25865A790046F9F8 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
 		E9D0DEFE257A99C500B6C855 /* ItemRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRowView.swift; sourceTree = "<group>"; };
 		E9D0DF01257AA0FE00B6C855 /* Binding-OnChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding-OnChange.swift"; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 		DCB2A9C025AEE7F400A12C0C /* TDPortfolioTests */ = {
 			isa = PBXGroup;
 			children = (
+				E9A41BFA25C1638600BB733D /* DevelopmentTests.swift */,
 				E9405EED25BDC12600DA561C /* ProjectTests.swift */,
 				E9A41BF425C1599500BB733D /* AwardTests.swift */,
 				DCB2A9C125AEE7F400A12C0C /* TDPortfolioTests.swift */,
@@ -386,6 +389,7 @@
 				E9A41BF525C1599500BB733D /* AwardTests.swift in Sources */,
 				DCB2A9C225AEE7F400A12C0C /* TDPortfolioTests.swift in Sources */,
 				E9405EEE25BDC12600DA561C /* ProjectTests.swift in Sources */,
+				E9A41BFB25C1638600BB733D /* DevelopmentTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
