@@ -51,5 +51,5 @@ class DevelopmentTests: BaseTestCase {
         // Then
         XCTAssertEqual(item.priority, 3, "Example item should be high priority.")
     }
-    
+
 }

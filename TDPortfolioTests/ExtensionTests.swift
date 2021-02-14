@@ -10,7 +10,7 @@ import XCTest
 @testable import TDPortfolio
 
 class ExtensionTests: XCTestCase {
-    
+
     func testSequenceKeyPathSortingSelf() {
         // Given
         let items = [1, 4, 3, 2, 5]
