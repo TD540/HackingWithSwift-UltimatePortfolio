@@ -49,6 +49,16 @@
                ReferencedContainer = "container:TDPortfolio.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E9760FD925F389640067811F"
+               BuildableName = "TDPortfolioUITests.xctest"
+               BlueprintName = "TDPortfolioUITests"
+               ReferencedContainer = "container:TDPortfolio.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
