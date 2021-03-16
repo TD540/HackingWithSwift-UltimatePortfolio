@@ -45,39 +45,39 @@ class TDPortfolioUITests: XCTestCase {
         XCTAssertEqual(app.tables.cells.count, 2,
                        "There should be 2 list rows after adding an item.")
     }
-    func testEditingProjectUpdatesCorrectly() {
-        app.buttons["Open"].tap()
-        XCTAssertEqual(app.tables.cells.count, 0,
-                       "There should be no list rows initially!")
-        app.buttons["add"].tap()
-        XCTAssertEqual(app.tables.cells.count, 1,
-                       "There should be 1 list row after adding a project.")
-
-        app.buttons["NEW PROJECT"].tap()
-        app.textFields["Project name"].tap()
-        app.keys["space"].tap()
-        app.keys["more"].tap()
-        app.keys["2"].tap()
-        app.buttons["Return"].tap()
-        app.buttons["Open Projects"].tap()
-        XCTAssertTrue(app.buttons["NEW PROJECT 2"].exists,
-                      "The new project name should be visible in the list.")
-    }
-    func testEditingItemUpdatesCorrectly() {
-        // Go to Open Projects and
-        // one project and one item before the test
-        testAddingItemInsertRows()
-
-        app.buttons["New Item"].tap()
-        app.textFields["Item name"].tap()
-        app.keys["space"].tap()
-        app.keys["more"].tap()
-        app.keys["2"].tap()
-        app.buttons["Return"].tap()
-        app.buttons["Open Projects"].tap()
-        XCTAssertTrue(app.buttons["New Item 2"].exists,
-                      "The new item 2 should be visible in the list.")
-    }
+//    func testEditingProjectUpdatesCorrectly() {
+//        app.buttons["Open"].tap()
+//        XCTAssertEqual(app.tables.cells.count, 0,
+//                       "There should be no list rows initially!")
+//        app.buttons["add"].tap()
+//        XCTAssertEqual(app.tables.cells.count, 1,
+//                       "There should be 1 list row after adding a project.")
+//
+//        app.buttons["NEW PROJECT"].tap()
+//        app.textFields["Project name"].tap()
+//        app.keys["space"].tap()
+//        app.keys["more"].tap()
+//        app.keys["2"].tap()
+//        app.buttons["Return"].tap()
+//        app.buttons["Open Projects"].tap()
+//        XCTAssertTrue(app.buttons["NEW PROJECT 2"].exists,
+//                      "The new project name should be visible in the list.")
+//    }
+//    func testEditingItemUpdatesCorrectly() {
+//        // Go to Open Projects and
+//        // one project and one item before the test
+//        testAddingItemInsertRows()
+//
+//        app.buttons["New Item"].tap()
+//        app.textFields["Item name"].tap()
+//        app.keys["space"].tap()
+//        app.keys["more"].tap()
+//        app.keys["2"].tap()
+//        app.buttons["Return"].tap()
+//        app.buttons["Open Projects"].tap()
+//        XCTAssertTrue(app.buttons["New Item 2"].exists,
+//                      "The new item 2 should be visible in the list.")
+//    }
     func testAllAwardsShowLockedAlert() {
         app.buttons["Awards"].tap()
         for award in app.scrollViews.buttons.allElementsBoundByIndex {

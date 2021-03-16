@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ItemListView: View {
     let title: LocalizedStringKey
-    let items: FetchedResults<Item>.SubSequence
+    let items: ArraySlice<Item>
 
     func itemButton(for item: Item) -> some View {
         NavigationLink(destination: EditItemView(item: item)) {
