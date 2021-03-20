@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct EditProjectView: View {
-    let project: Project
+    @ObservedObject var project: Project
 
     @EnvironmentObject var dataController: DataController
     @Environment(\.presentationMode) var presentationMode
@@ -16,8 +16,6 @@ struct EditProjectView: View {
     @State private var title: String
     @State private var detail: String
     @State private var color: String
-//    @State private var creationDate: Date // ?
-//    @State private var closed: Bool // ?
     @State private var showingDeleteConfirm = false
 
     let colorColumns = [
