@@ -40,7 +40,7 @@ struct EditItemView: View {
                 .pickerStyle(SegmentedPickerStyle())
             }
             Section {
-                Toggle("Mark Completed", isOn: $completed.onChange(update))
+                Toggle("Mark Completed", isOn: $completed.onChange(updateCompleted))
             }
         }
         .navigationTitle("Edit Item")
@@ -61,6 +61,12 @@ struct EditItemView: View {
         item.detail = detail
         item.priority = Int16(priority)
         item.completed = completed
+    }
+    func updateCompleted() {
+        update()
+        if item.completed {
+            UINotificationFeedbackGenerator().notificationOccurred(.success)
+        }
     }
 }
 
