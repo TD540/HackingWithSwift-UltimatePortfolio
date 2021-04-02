@@ -44,29 +44,26 @@ struct EditItemView: View {
             }
         }
         .navigationTitle("Edit Item")
-//        .onDisappear(perform: update)
-// causes the view to update, but the user can see the change happening when goinng to previous view
-//        .onChange(of: title) { _ in update() }
-//        .onChange(of: detail) { _ in update() }
-//        .onChange(of: priority) { _ in update() }
-//        .onChange(of: completed) { _ in update() }
-// this the "SwiftUI way but is too tedious according to Paul. it's better to use extend Binding with onChange method
-        .onDisappear(perform: dataController.save)
+        .onDisappear(perform: save)
     }
 
     func update() {
         item.project?.objectWillChange.send()
-
         item.title = title
         item.detail = detail
         item.priority = Int16(priority)
         item.completed = completed
     }
+
     func updateCompleted() {
         update()
         if item.completed {
             UINotificationFeedbackGenerator().notificationOccurred(.success)
         }
+    }
+
+    func save() {
+        dataController.update(item)
     }
 }
 
