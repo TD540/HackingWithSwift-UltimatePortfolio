@@ -17,7 +17,12 @@ struct EditProjectView: View {
     @State private var title: String
     @State private var detail: String
     @State private var color: String
+
     @State private var showingDeleteConfirm = false
+    @State private var showingNotificationsError = false
+
+    @State private var remindMe: Bool
+    @State private var reminderTime: Date
 
     @State private var engine = try? CHHapticEngine()
 
@@ -30,6 +35,14 @@ struct EditProjectView: View {
         _title = State(initialValue: project.projectTitle)
         _detail = State(initialValue: project.projectDetail)
         _color = State(initialValue: project.projectColor)
+
+        if let projectReminderTime = project.reminderTime {
+            _reminderTime = State(initialValue: projectReminderTime)
+            _remindMe = State(initialValue: true)
+        } else {
+            _reminderTime = State(initialValue: Date())
+            _remindMe = State(initialValue: false)
+        }
     }
 
     var body: some View {
@@ -43,6 +56,25 @@ struct EditProjectView: View {
                     ForEach(Project.colors, id: \.self, content: colorButton)
                 }
                 .padding(.vertical)
+            }
+
+            Section(header: Text("Project reminders")) {
+                Toggle("Show reminders", isOn: $remindMe.animation().onChange(update))
+                    .alert(isPresented: $showingNotificationsError, content: {
+                        Alert(
+                            title: Text("Oh no!"),
+                            message: Text("Oh no no no no no. Check your notifications settings, mate."),
+                            primaryButton: .default(Text("Check Settings"), action: showAppSettings),
+                            secondaryButton: .cancel()
+                        )
+                    })
+                if remindMe {
+                    DatePicker(
+                        "Reminder time",
+                        selection: $reminderTime.onChange(update),
+                        displayedComponents: .hourAndMinute
+                    )
+                }
             }
 
             // swiftlint:disable:next line_length
@@ -73,6 +105,22 @@ struct EditProjectView: View {
         project.title = title
         project.detail = detail
         project.color = color
+
+        if remindMe {
+            project.reminderTime = reminderTime
+
+            dataController.addReminders(for: project) { success in
+                if success == false {
+                    project.reminderTime = nil
+                    remindMe = false
+
+                    showingNotificationsError = true
+                }
+            }
+        } else {
+            project.reminderTime = nil
+            dataController.removeReminders(for: project)
+        }
     }
 
     func delete() {
@@ -141,6 +189,16 @@ struct EditProjectView: View {
                 : .isButton
         )
         .accessibilityLabel(LocalizedStringKey(item))
+    }
+
+    func showAppSettings() {
+        guard let settingsURL = URL(string: UIApplication.openSettingsURLString) else {
+            return
+        }
+
+        if UIApplication.shared.canOpenURL(settingsURL) {
+            UIApplication.shared.open(settingsURL)
+        }
     }
 }
 
