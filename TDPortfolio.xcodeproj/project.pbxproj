@@ -109,6 +109,7 @@
 		E94179A12586698B00AD0B0E /* AwardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardsView.swift; sourceTree = "<group>"; };
 		E9423A232624394E0059528F /* ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
 		E9423A2526243DA40059528F /* UnlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnlockView.swift; sourceTree = "<group>"; };
+		E94FF90726600C9E00255AAC /* Configuration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; name = Configuration.storekit; path = TDPortfolio/Configuration.storekit; sourceTree = "<group>"; };
 		E9549EC1257141C9000E9FCE /* Item-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item-CoreDataHelpers.swift"; sourceTree = "<group>"; };
 		E9549EC4257142FF000E9FCE /* Project-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project-CoreDataHelpers.swift"; sourceTree = "<group>"; };
 		E96CB2BE262308D500750170 /* UnlockManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnlockManager.swift; sourceTree = "<group>"; };
@@ -270,6 +271,7 @@
 		E92E40BE255EE7E3002F0ABF = {
 			isa = PBXGroup;
 			children = (
+				E94FF90726600C9E00255AAC /* Configuration.storekit */,
 				E92E40C9255EE7E3002F0ABF /* TDPortfolio */,
 				DCB2A9C025AEE7F400A12C0C /* TDPortfolioTests */,
 				E9760FDB25F389640067811F /* TDPortfolioUITests */,
