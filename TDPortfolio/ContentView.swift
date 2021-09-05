@@ -23,7 +23,7 @@ struct ContentView: View {
 
             ProjectsView(dataController: dataController,
                          showClosedProjects: false)
-                .tag(ProjectsView.closedTag)
+                .tag(ProjectsView.openTag)
                 .tabItem {
                     Image(systemName: "list.bullet")
                     Text("Open")
@@ -31,7 +31,7 @@ struct ContentView: View {
 
             ProjectsView(dataController: dataController,
                          showClosedProjects: true)
-                .tag(ProjectsView.openTag)
+                .tag(ProjectsView.closedTag)
                 .tabItem {
                     Image(systemName: "checkmark")
                     Text("Closed")
@@ -46,10 +46,16 @@ struct ContentView: View {
 
         }
         .onContinueUserActivity(CSSearchableItemActionType, perform: moveToHome)
+        .onOpenURL(perform: openURL)
     }
 
     func moveToHome(_ input: Any) {
         selectedView = HomeView.homeTag
+    }
+
+    func openURL(_ url: URL) {
+        selectedView = ProjectsView.openTag
+        dataController.addProject()
     }
 }
 
