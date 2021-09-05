@@ -83,7 +83,7 @@
          </BuildableReference>
       </BuildableProductRunnable>
       <StoreKitConfigurationFileReference
-         identifier = "../../TDPortfolio/Configuration.storekit">
+         identifier = "../../TDPortfolio/Configuration/Configuration.storekit">
       </StoreKitConfigurationFileReference>
    </LaunchAction>
    <ProfileAction

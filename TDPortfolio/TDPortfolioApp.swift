@@ -35,6 +35,7 @@ struct TDPortfolioApp: App {
                     ),
                     perform: save
                 )
+                .onAppear(perform: dataController.appLaunched)
         }
     }
 
