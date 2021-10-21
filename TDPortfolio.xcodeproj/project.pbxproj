@@ -17,6 +17,14 @@
 		DCB2A9E025AF6A2400A12C0C /* AssetTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB2A9DF25AF6A2400A12C0C /* AssetTest.swift */; };
 		E908B18426E4EA8000CEC0FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E908B18326E4EA8000CEC0FA /* AppDelegate.swift */; };
 		E908B18626E4EA8800CEC0FA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E908B18526E4EA8800CEC0FA /* SceneDelegate.swift */; };
+		E908B18D26E6B7EE00CEC0FA /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E908B18C26E6B7EE00CEC0FA /* WidgetKit.framework */; };
+		E908B18F26E6B7EE00CEC0FA /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E908B18E26E6B7EE00CEC0FA /* SwiftUI.framework */; };
+		E908B19226E6B7EE00CEC0FA /* PortfolioWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E908B19126E6B7EE00CEC0FA /* PortfolioWidget.swift */; };
+		E908B19526E6B7F100CEC0FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E908B19426E6B7F100CEC0FA /* Assets.xcassets */; };
+		E908B19726E6B7F100CEC0FA /* PortfolioWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = E908B19326E6B7EE00CEC0FA /* PortfolioWidget.intentdefinition */; };
+		E908B19826E6B7F100CEC0FA /* PortfolioWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = E908B19326E6B7EE00CEC0FA /* PortfolioWidget.intentdefinition */; };
+		E908B19B26E6B7F100CEC0FA /* PortfolioWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E908B18B26E6B7EE00CEC0FA /* PortfolioWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E908B1A026E6B8D100CEC0FA /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E91E216B25619DBB00A0CC0B /* Main.xcdatamodeld */; };
 		E90D6E9625D8F86D00132F95 /* PerformanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90D6E9525D8F86D00132F95 /* PerformanceTests.swift */; };
 		E91C6FBB257434FF000F1E41 /* EditItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91C6FBA257434FF000F1E41 /* EditItemView.swift */; };
 		E91E216D25619DBB00A0CC0B /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E91E216B25619DBB00A0CC0B /* Main.xcdatamodeld */; };
@@ -40,6 +48,12 @@
 		E96CB2BF262308D500750170 /* UnlockManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96CB2BE262308D500750170 /* UnlockManager.swift */; };
 		E96CB2C2262359C800750170 /* SKProduct-LocalizedPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96CB2C1262359C800750170 /* SKProduct-LocalizedPrice.swift */; };
 		E96CB2C426235B0800750170 /* PurchaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96CB2C326235B0800750170 /* PurchaseButton.swift */; };
+		E9720DC626E6BA19000CA0EB /* DataController-Reminders.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9720DC526E6BA19000CA0EB /* DataController-Reminders.swift */; };
+		E9720DC826E6BA92000CA0EB /* DataController-Awards.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9720DC726E6BA92000CA0EB /* DataController-Awards.swift */; };
+		E9720DCA26E6BBB7000CA0EB /* Item-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9549EC1257141C9000E9FCE /* Item-CoreDataHelpers.swift */; };
+		E9720DCC26E6BD3B000CA0EB /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91E216F25619F4100A0CC0B /* DataController.swift */; };
+		E9720DCE26E6BEA6000CA0EB /* Project-Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9720DCD26E6BEA6000CA0EB /* Project-Colors.swift */; };
+		E9720DCF26E6BED1000CA0EB /* Project-Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9720DCD26E6BEA6000CA0EB /* Project-Colors.swift */; };
 		E9760FDD25F389640067811F /* TDPortfolioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9760FDC25F389640067811F /* TDPortfolioUITests.swift */; };
 		E9875660257BB25E00B68652 /* ProjectHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987565F257BB25E00B68652 /* ProjectHeaderView.swift */; };
 		E98A531925644E5D00B93A97 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E98A531825644E5D00B93A97 /* CloudKit.framework */; };
@@ -65,6 +79,13 @@
 			remoteGlobalIDString = E92E40C6255EE7E3002F0ABF;
 			remoteInfo = "TD Portfolio";
 		};
+		E908B19926E6B7F100CEC0FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E92E40BF255EE7E3002F0ABF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E908B18A26E6B7EE00CEC0FA;
+			remoteInfo = PortfolioWidgetExtension;
+		};
 		E9760FDF25F389640067811F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E92E40BF255EE7E3002F0ABF /* Project object */;
@@ -73,6 +94,20 @@
 			remoteInfo = TDPortfolio;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E908B19F26E6B7F100CEC0FA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E908B19B26E6B7F100CEC0FA /* PortfolioWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		DC4B55F82593D5AC007F6E9D /* ItemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListView.swift; sourceTree = "<group>"; };
@@ -93,6 +128,13 @@
 		DCB2A9DF25AF6A2400A12C0C /* AssetTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetTest.swift; sourceTree = "<group>"; };
 		E908B18326E4EA8000CEC0FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E908B18526E4EA8800CEC0FA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E908B18B26E6B7EE00CEC0FA /* PortfolioWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PortfolioWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E908B18C26E6B7EE00CEC0FA /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		E908B18E26E6B7EE00CEC0FA /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		E908B19126E6B7EE00CEC0FA /* PortfolioWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioWidget.swift; sourceTree = "<group>"; };
+		E908B19326E6B7EE00CEC0FA /* PortfolioWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = PortfolioWidget.intentdefinition; sourceTree = "<group>"; };
+		E908B19426E6B7F100CEC0FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E908B19626E6B7F100CEC0FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E90D6E9525D8F86D00132F95 /* PerformanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceTests.swift; sourceTree = "<group>"; };
 		E91C6FBA257434FF000F1E41 /* EditItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemView.swift; sourceTree = "<group>"; };
 		E91E216C25619DBB00A0CC0B /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
@@ -119,6 +161,10 @@
 		E96CB2C026230AAC00750170 /* Configuration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Configuration.storekit; sourceTree = "<group>"; };
 		E96CB2C1262359C800750170 /* SKProduct-LocalizedPrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SKProduct-LocalizedPrice.swift"; sourceTree = "<group>"; };
 		E96CB2C326235B0800750170 /* PurchaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseButton.swift; sourceTree = "<group>"; };
+		E9720DC526E6BA19000CA0EB /* DataController-Reminders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataController-Reminders.swift"; sourceTree = "<group>"; };
+		E9720DC726E6BA92000CA0EB /* DataController-Awards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataController-Awards.swift"; sourceTree = "<group>"; };
+		E9720DCD26E6BEA6000CA0EB /* Project-Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project-Colors.swift"; sourceTree = "<group>"; };
+		E9720DD026E6C0B7000CA0EB /* PortfolioWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PortfolioWidgetExtension.entitlements; sourceTree = "<group>"; };
 		E9760FDA25F389640067811F /* TDPortfolioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDPortfolioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9760FDC25F389640067811F /* TDPortfolioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDPortfolioUITests.swift; sourceTree = "<group>"; };
 		E9760FDE25F389640067811F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -144,6 +190,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E908B18826E6B7EE00CEC0FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E908B18F26E6B7EE00CEC0FA /* SwiftUI.framework in Frameworks */,
+				E908B18D26E6B7EE00CEC0FA /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,6 +244,7 @@
 				DC517A57258E6B4B00F070D8 /* Color-Additions.swift */,
 				E9549EC1257141C9000E9FCE /* Item-CoreDataHelpers.swift */,
 				E9549EC4257142FF000E9FCE /* Project-CoreDataHelpers.swift */,
+				E9720DCD26E6BEA6000CA0EB /* Project-Colors.swift */,
 				E9D8BAAD2585295A001FC8BB /* Sequence-Sorting.swift */,
 				E96CB2C1262359C800750170 /* SKProduct-LocalizedPrice.swift */,
 			);
@@ -262,6 +318,17 @@
 			path = Awards;
 			sourceTree = "<group>";
 		};
+		E908B19026E6B7EE00CEC0FA /* PortfolioWidget */ = {
+			isa = PBXGroup;
+			children = (
+				E908B19126E6B7EE00CEC0FA /* PortfolioWidget.swift */,
+				E908B19326E6B7EE00CEC0FA /* PortfolioWidget.intentdefinition */,
+				E908B19426E6B7F100CEC0FA /* Assets.xcassets */,
+				E908B19626E6B7F100CEC0FA /* Info.plist */,
+			);
+			path = PortfolioWidget;
+			sourceTree = "<group>";
+		};
 		E9235FCD25CEE9EB0055D05A /* Fixtures */ = {
 			isa = PBXGroup;
 			children = (
@@ -274,9 +341,11 @@
 		E92E40BE255EE7E3002F0ABF = {
 			isa = PBXGroup;
 			children = (
+				E9720DD026E6C0B7000CA0EB /* PortfolioWidgetExtension.entitlements */,
 				E92E40C9255EE7E3002F0ABF /* TDPortfolio */,
 				DCB2A9C025AEE7F400A12C0C /* TDPortfolioTests */,
 				E9760FDB25F389640067811F /* TDPortfolioUITests */,
+				E908B19026E6B7EE00CEC0FA /* PortfolioWidget */,
 				E92E40C8255EE7E3002F0ABF /* Products */,
 				E98A531725644E5D00B93A97 /* Frameworks */,
 			);
@@ -288,6 +357,7 @@
 				E92E40C7255EE7E3002F0ABF /* TDPortfolio.app */,
 				DCB2A9BF25AEE7F400A12C0C /* TDPortfolioTests.xctest */,
 				E9760FDA25F389640067811F /* TDPortfolioUITests.xctest */,
+				E908B18B26E6B7EE00CEC0FA /* PortfolioWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -303,6 +373,8 @@
 				E908B18326E4EA8000CEC0FA /* AppDelegate.swift */,
 				E908B18526E4EA8800CEC0FA /* SceneDelegate.swift */,
 				E91E216F25619F4100A0CC0B /* DataController.swift */,
+				E9720DC726E6BA92000CA0EB /* DataController-Awards.swift */,
+				E9720DC526E6BA19000CA0EB /* DataController-Reminders.swift */,
 				E92E40CC255EE7E3002F0ABF /* ContentView.swift */,
 				E92E40CE255EE7E3002F0ABF /* Assets.xcassets */,
 				E93A478F257BD090005B37D4 /* Colors.xcassets */,
@@ -343,6 +415,8 @@
 			isa = PBXGroup;
 			children = (
 				E98A531825644E5D00B93A97 /* CloudKit.framework */,
+				E908B18C26E6B7EE00CEC0FA /* WidgetKit.framework */,
+				E908B18E26E6B7EE00CEC0FA /* SwiftUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -368,6 +442,23 @@
 			productReference = DCB2A9BF25AEE7F400A12C0C /* TDPortfolioTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		E908B18A26E6B7EE00CEC0FA /* PortfolioWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E908B19C26E6B7F100CEC0FA /* Build configuration list for PBXNativeTarget "PortfolioWidgetExtension" */;
+			buildPhases = (
+				E908B18726E6B7EE00CEC0FA /* Sources */,
+				E908B18826E6B7EE00CEC0FA /* Frameworks */,
+				E908B18926E6B7EE00CEC0FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PortfolioWidgetExtension;
+			productName = PortfolioWidgetExtension;
+			productReference = E908B18B26E6B7EE00CEC0FA /* PortfolioWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		E92E40C6255EE7E3002F0ABF /* TDPortfolio */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E92E40D6255EE7E3002F0ABF /* Build configuration list for PBXNativeTarget "TDPortfolio" */;
@@ -376,10 +467,12 @@
 				E92E40C3255EE7E3002F0ABF /* Sources */,
 				E92E40C4255EE7E3002F0ABF /* Frameworks */,
 				E92E40C5255EE7E3002F0ABF /* Resources */,
+				E908B19F26E6B7F100CEC0FA /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E908B19A26E6B7F100CEC0FA /* PBXTargetDependency */,
 			);
 			name = TDPortfolio;
 			productName = Again;
@@ -410,12 +503,15 @@
 		E92E40BF255EE7E3002F0ABF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1240;
+				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
 					DCB2A9BE25AEE7F400A12C0C = {
 						CreatedOnToolsVersion = 12.3;
 						TestTargetID = E92E40C6255EE7E3002F0ABF;
+					};
+					E908B18A26E6B7EE00CEC0FA = {
+						CreatedOnToolsVersion = 12.5.1;
 					};
 					E92E40C6255EE7E3002F0ABF = {
 						CreatedOnToolsVersion = 12.2;
@@ -444,6 +540,7 @@
 				E92E40C6255EE7E3002F0ABF /* TDPortfolio */,
 				DCB2A9BE25AEE7F400A12C0C /* TDPortfolioTests */,
 				E9760FD925F389640067811F /* TDPortfolioUITests */,
+				E908B18A26E6B7EE00CEC0FA /* PortfolioWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -455,6 +552,14 @@
 			files = (
 				E9235FD125CEEA310055D05A /* DecodableString.json in Resources */,
 				E9235FCF25CEE9FF0055D05A /* DecodableDictionary.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E908B18926E6B7EE00CEC0FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E908B19526E6B7F100CEC0FA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,6 +621,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E908B18726E6B7EE00CEC0FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9720DCC26E6BD3B000CA0EB /* DataController.swift in Sources */,
+				E9720DCF26E6BED1000CA0EB /* Project-Colors.swift in Sources */,
+				E908B1A026E6B8D100CEC0FA /* Main.xcdatamodeld in Sources */,
+				E9720DCA26E6BBB7000CA0EB /* Item-CoreDataHelpers.swift in Sources */,
+				E908B19726E6B7F100CEC0FA /* PortfolioWidget.intentdefinition in Sources */,
+				E908B19226E6B7EE00CEC0FA /* PortfolioWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E92E40C3255EE7E3002F0ABF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -531,6 +649,7 @@
 				E9F417E1260001A6004642DD /* HomeViewModel.swift in Sources */,
 				E96CB2BF262308D500750170 /* UnlockManager.swift in Sources */,
 				E9549EC5257142FF000E9FCE /* Project-CoreDataHelpers.swift in Sources */,
+				E9720DC826E6BA92000CA0EB /* DataController-Awards.swift in Sources */,
 				DC517A58258E6B4B00F070D8 /* Color-Additions.swift in Sources */,
 				E93A4794257BD30F005B37D4 /* EditProjectView.swift in Sources */,
 				E91E217025619F4100A0CC0B /* DataController.swift in Sources */,
@@ -541,7 +660,9 @@
 				E92E40CD255EE7E3002F0ABF /* ContentView.swift in Sources */,
 				E908B18426E4EA8000CEC0FA /* AppDelegate.swift in Sources */,
 				E9D0DF02257AA0FE00B6C855 /* Binding-OnChange.swift in Sources */,
+				E9720DCE26E6BEA6000CA0EB /* Project-Colors.swift in Sources */,
 				E9D8BAAE2585295A001FC8BB /* Sequence-Sorting.swift in Sources */,
+				E908B19826E6B7F100CEC0FA /* PortfolioWidget.intentdefinition in Sources */,
 				E9BCEC2E25865A790046F9F8 /* Bundle-Decodable.swift in Sources */,
 				DC4B55F92593D5AC007F6E9D /* ItemListView.swift in Sources */,
 				E98A531B25644FEB00B93A97 /* HomeView.swift in Sources */,
@@ -549,6 +670,7 @@
 				E9F417E326000DC7004642DD /* ItemRowViewModel.swift in Sources */,
 				E9549EC2257141C9000E9FCE /* Item-CoreDataHelpers.swift in Sources */,
 				E96CB2C2262359C800750170 /* SKProduct-LocalizedPrice.swift in Sources */,
+				E9720DC626E6BA19000CA0EB /* DataController-Reminders.swift in Sources */,
 				E9F417DF25FFF0CD004642DD /* ProjectsViewModel.swift in Sources */,
 				E91C6FBB257434FF000F1E41 /* EditItemView.swift in Sources */,
 			);
@@ -569,6 +691,11 @@
 			isa = PBXTargetDependency;
 			target = E92E40C6255EE7E3002F0ABF /* TDPortfolio */;
 			targetProxy = DCB2A9C425AEE7F400A12C0C /* PBXContainerItemProxy */;
+		};
+		E908B19A26E6B7F100CEC0FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E908B18A26E6B7EE00CEC0FA /* PortfolioWidgetExtension */;
+			targetProxy = E908B19926E6B7F100CEC0FA /* PBXContainerItemProxy */;
 		};
 		E9760FE025F389640067811F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -650,6 +777,52 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TDPortfolio.app/TDPortfolio";
+			};
+			name = Release;
+		};
+		E908B19D26E6B7F100CEC0FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = PortfolioWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZK76SGK8FA;
+				INFOPLIST_FILE = PortfolioWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "design.td540.TD-Portfolio.PortfolioWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E908B19E26E6B7F100CEC0FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = PortfolioWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZK76SGK8FA;
+				INFOPLIST_FILE = PortfolioWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "design.td540.TD-Portfolio.PortfolioWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -774,6 +947,7 @@
 		E92E40D7255EE7E3002F0ABF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = TDPortfolio/Configuration/TDPortfolio.entitlements;
@@ -797,6 +971,7 @@
 		E92E40D8255EE7E3002F0ABF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = TDPortfolio/Configuration/TDPortfolio.entitlements;
@@ -865,6 +1040,15 @@
 			buildConfigurations = (
 				DCB2A9C625AEE7F500A12C0C /* Debug */,
 				DCB2A9C725AEE7F500A12C0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E908B19C26E6B7F100CEC0FA /* Build configuration list for PBXNativeTarget "PortfolioWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E908B19D26E6B7F100CEC0FA /* Debug */,
+				E908B19E26E6B7F100CEC0FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
