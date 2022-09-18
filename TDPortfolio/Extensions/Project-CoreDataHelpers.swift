@@ -36,16 +36,6 @@ extension Project {
     var projectItems: [Item] {
         items?.allObjects as? [Item] ?? []
     }
-    func projectItems(using sortOrder: Item.SortOrder) -> [Item] {
-        switch sortOrder {
-        case .title:
-            return projectItems.sorted(by: \Item.itemTitle)
-        case .creationDate:
-            return projectItems.sorted(by: \Item.itemCreationDate)
-        case .optimized:
-            return projectItemsDefaultSorted
-        }
-    }
     var projectItemsDefaultSorted: [Item] {
         projectItems.sorted { first, second in
             if first.completed == false {
@@ -88,5 +78,16 @@ extension Project {
         project.closed = true
         project.creationDate = Date()
         return project
+    }
+
+    func projectItems(using sortOrder: Item.SortOrder) -> [Item] {
+        switch sortOrder {
+        case .title:
+            return projectItems.sorted(by: \Item.itemTitle)
+        case .creationDate:
+            return projectItems.sorted(by: \Item.itemCreationDate)
+        case .optimized:
+            return projectItemsDefaultSorted
+        }
     }
 }
